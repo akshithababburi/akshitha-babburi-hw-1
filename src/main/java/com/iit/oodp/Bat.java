@@ -7,10 +7,10 @@ public class Bat extends Creature implements Flyer {
 
     public void eat(Thing aThing) {
         if (!(aThing instanceof Creature)) {
-            System.out.println(getName() + " " + getClass().getSimpleName() + " wont eat a " + aThing);
+            System.out.println(getName() + " " + getClass().getSimpleName() + " wont eat a " + aThing + ".");
         } else if (aThing instanceof Creature) {
             lastAte = aThing;
-            System.out.println(getName() + " has just eaten a " + aThing.getName());
+            System.out.println(getName() + " has just eaten a " + aThing.getName()+ ".");
         }
 
     }
@@ -23,14 +23,14 @@ public class Bat extends Creature implements Flyer {
 
     @Override
     public void fly() {
-        System.out.println(getName() + " " + getClass().getSimpleName() + " is swooping through the dark");
+        System.out.println(getName() + " " + getClass().getSimpleName() + " is swooping through the dark.");
 
     }
 
     public void whatDidYouEat() {
         if (null != lastAte)
-            System.out.println(getName() + " " + getClass().getSimpleName() + " has eaten a " + lastAte.getName());
+            System.out.println(getName() + " " + getClass().getSimpleName() + " has eaten a " + lastAte.getName() + "!");
         else
-            System.out.println(getName() + " " + getClass().getSimpleName() + " has had nothing to eat");
+            System.out.println(getName() + " " + getClass().getSimpleName() + " has had nothing to eat!");
     }
 }

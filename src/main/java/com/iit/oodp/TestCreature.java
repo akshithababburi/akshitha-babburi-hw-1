@@ -47,22 +47,26 @@ public class TestCreature {
         System.out.println();
 
         redAnt.move();
+        redAnt.whatDidYouEat();
         redAnt.eat(thingArr[2]);
         redAnt.whatDidYouEat();
 
         batman.move();
+        batman.whatDidYouEat();
         batman.eat(thingArr[1]);
         batman.eat(creatureArray[0]);
         batman.fly();
         batman.whatDidYouEat();
 
         butterFly.move();
+        butterFly.whatDidYouEat();
         butterFly.eat(creatureArray[1]);
         butterFly.eat(thingArr[1]);
         butterFly.fly();
         butterFly.whatDidYouEat();
 
         bengalTiger.move();
+        bengalTiger.whatDidYouEat();
         bengalTiger.eat(thingArr[0]);
         bengalTiger.whatDidYouEat();
 
