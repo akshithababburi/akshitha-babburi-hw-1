@@ -10,7 +10,7 @@ public class Bat extends Creature implements Flyer {
             System.out.println(getName() + " " + getClass().getSimpleName() + " wont eat a " + aThing + ".");
         } else if (aThing instanceof Creature) {
             lastAte = aThing;
-            System.out.println(getName() + " has just eaten a " + aThing.getName()+ ".");
+            System.out.println(getName() + " has just eaten a " + aThing.getName() + ".");
         }
 
     }

@@ -8,11 +8,11 @@ public class TestCreature {
     }
 
     public static void main(String[] args) {
-        Thing thingArr[] = new Thing[THING_COUNT];
-        Creature creatureArray[] = new Creature[CREATURE_COUNT];
+        Thing[] thingArr = new Thing[THING_COUNT];
+        Creature[] creatureArray = new Creature[CREATURE_COUNT];
 
 
-        String thingNames[] = {"Fan", "Car", "Book"};
+        String[] thingNames = {"Fan", "Car", "Book"};
 
         for (int i = 0; i < thingNames.length; i++) {
             thingArr[i] = new Thing(thingNames[i]);

@@ -2,7 +2,7 @@ package com.iit.oodp;
 
 public class Thing {
 
-    private String name;
+    private final String name;
 
     public String getName() {
         return name;
